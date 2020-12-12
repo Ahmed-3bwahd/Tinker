@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tinker</title>
+  <base href="https://Ahmed-3bwahd.github.io/Tinker/">  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/fontAwesome.css">
+  <link rel="stylesheet" href="./assets/css/owl-carousel.css">
+
+<link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
+<body>
+  <app-root></app-root>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="./assets/js/vendor/bootstrap.min.js"></script>
+
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+      // navigation click actions
+      $('.scroll-link').on('click', function(event){
+          event.preventDefault();
+          var sectionID = $(this).attr("data-id");
+          scrollToID('#' + sectionID, 750);
+      });
+      // scroll to top action
+      $('.scroll-top').on('click', function(event) {
+          event.preventDefault();
+          $('html, body').animate({scrollTop:0}, 'slow');
+      });
+      // mobile nav toggle
+      $('#nav-toggle').on('click', function (event) {
+          event.preventDefault();
+          $('#main-nav').toggleClass("open");
+      });
+  });
+  // scroll function
+  function scrollToID(id, speed){
+      var offSet = 50;
+      var targetOffset = $(id).offset().top - offSet;
+      var mainNav = $('#main-nav');
+      $('html,body').animate({scrollTop:targetOffset}, speed);
+      if (mainNav.hasClass("open")) {
+          mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+          mainNav.removeClass("open");
+      }
+  }
+  </script>
+
+<script src="runtime-es2015.cdfb0ddb511f65fdc0a0.js" type="module"></script><script src="runtime-es5.cdfb0ddb511f65fdc0a0.js" nomodule defer></script><script src="polyfills-es5.0290b245fbcca09184ac.js" nomodule defer></script><script src="polyfills-es2015.ffa9bb4e015925544f91.js" type="module"></script><script src="main-es2015.7d7198d6f232c86668ff.js" type="module"></script><script src="main-es5.7d7198d6f232c86668ff.js" nomodule defer></script></body>
+</html>
