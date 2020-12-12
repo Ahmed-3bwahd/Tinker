@@ -1,0 +1,19 @@
+<section id="about" class="page-section">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12" *ngFor="let service of services">
+          <div class="service-item">
+              <div class="icon">
+                  <img src="{{service.aboutimg}}" alt="">
+              </div>
+              <h4>{{service.name}}</h4>
+              <div class="line-dec"></div>
+              <p>{{service.desc}}</p>
+              <div class="primary-blue-button">
+                  <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>

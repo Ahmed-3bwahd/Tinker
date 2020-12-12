@@ -1,0 +1,44 @@
+<section id="portfolio">
+  <div class="content-wrapper">
+      <div class="inner-container container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="section-heading">
+                      <h4>Our Gallery</h4>
+                      <div class="line-dec"></div>
+                      <p>In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed enim ante, bibendum nec dictum ac, gravida ac lectus.</p>
+                      <div class="filter-categories">
+                          <ul class="project-filter">
+                              <li class="filter" data-filter="all"><span>Show All</span></li>
+                              <li class="filter" data-filter="branding"><span>Branding</span></li>
+                              <li class="filter" data-filter="graphic"><span>Graphic</span></li>
+                              <li class="filter" data-filter="nature"><span>Nature</span></li>
+                              <li class="filter" data-filter="animation"><span>Animation</span></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-8">
+                  <div class="projects-holder-3">
+                      <div class="projects-holder">
+                          <div class="row">
+                            <div
+                              class="col-md-6 col-sm-6 project-item mix {{porto.classname}}"
+                              *ngFor="let porto of portfolioContent">
+                              <div class="thumb">
+                                    <div class="image">
+                                        <a><img src="{{porto.portimg}}"></a>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+

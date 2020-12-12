@@ -1,0 +1,58 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', arial, sans-serif;
+}
+
+body {overflow-x: hidden}
+
+ul {list-style: none;margin: 0px;}
+
+p {color: #7a7a7a;font-size: 14px;line-height: 24px;}
+
+.primary-white-button a {
+display: inline-block;
+background-color: #fff;
+font-size: 13px;
+padding: 12px 18px;
+color: #121212;
+font-weight: 500;
+letter-spacing: 1px;
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 20px;
+}
+
+.primary-blue-button a {
+display: inline-block;
+background-color: #33c1cf;
+font-size: 13px;
+padding: 12px 18px;
+color: #fff;
+font-weight: 500;
+letter-spacing: 1px;
+text-transform: uppercase;
+text-decoration: none;
+border-radius: 20px;
+}
+
+
+/****************  Testi dots *****************/
+.owl-pagination {
+margin-top: 20px;
+opacity: 1;
+display: inline-block;
+}
+.owl-page span {
+display: block;
+width: 8px;
+height: 8px;
+margin: 0px 5px;
+filter: alpha(opacity=50);
+opacity: 0.5;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+background: #fff;
+}

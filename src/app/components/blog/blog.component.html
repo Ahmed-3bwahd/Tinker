@@ -1,0 +1,33 @@
+<div class="tabs-content" id="blog">
+  <div class="container">
+      <div class="row">
+          <div class="wrapper">
+              <div class="col-md-4">
+                  <div class="section-heading">
+                      <h4>Our Blog Posts</h4>
+                      <div class="line-dec"></div>
+                      <p>Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida quam.</p>
+                      <ul class="tabs clearfix">
+                        <li (click)="onSelectBlog(0)" [ngStyle]="{'cursor':'pointer'}"><a [ngClass]="{'active': blogMode== 0}">Nulla eget convallis augue</a></li>
+                        <li (click)="onSelectBlog(1)" [ngStyle]="{'cursor':'pointer'}"><a [ngClass]="{'active': blogMode== 1}">Quisque ultricies maximus</a></li>
+                        <li (click)="onSelectBlog(2)" [ngStyle]="{'cursor':'pointer'}"><a [ngClass]="{'active': blogMode== 2}">Sed vel elit et lorem</a></li>
+                        <li (click)="onSelectBlog(3)" [ngStyle]="{'cursor':'pointer'}"><a [ngClass]="{'active': blogMode== 3}">Vivamus purus neque</a></li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="col-md-8">
+                <section  class="tabgroup">
+                  <div>
+                    <img src="{{blogContent[blogMode].blogimg}}" alt="">
+                    <div class="text-content">
+                      <h4>{{blogContent[blogMode].name}}</h4>
+                      <span><a href="#">E-Commerce</a> / <a href="#">George</a> / <a href="#">14 August 2017</a></span>
+                      <p>{{blogContent[blogMode].description}}</p>
+                    </div>
+                  </div>
+                </section>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
